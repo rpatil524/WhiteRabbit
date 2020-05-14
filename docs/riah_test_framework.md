@@ -30,9 +30,10 @@ One reason is that RStudio will automatically prompt you with possible function 
 # Creating the Testing Framework
 
 In Rabbit in a Hat, have your ETL specifications open.
-The source data schema should be loaded from the White-Rabbit scan report, and the target data schema should be selected (usually the OMOP CDM v5).
+The source data schema should be loaded from the White-Rabbit scan report, and the target data schema should be selected (usually the OMOP CDM v5). 
 Go to _File → Generate ETL Test Framework_, and use a file name with the .R extension, for example `MyTestFrameWork.R`.
 
+**Note:** The test framework can be generated without creating any table-to-table mappings in RiaH. These are only used to calculate test coverage, which is not required for the framework to run.
 
 # Using the Testing Framework
 
